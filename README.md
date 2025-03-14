@@ -1,1 +1,2 @@
 # LearnOPedia
+Author - Shrey Shah
