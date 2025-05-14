@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="a.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navgation -->
+    <header>
+        <i class="fa-solid fa-bars" id="menu-bar"></i>
+       
+        <a href="#" class="logo"><span>Learn'opedia</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Categories</a>
+            <a href="#package">Courses</a>
+            <a href="#services">Payment Status</a>
+            <a href="#gallary">My profile</a>
+            <a href="#review">Feedback</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact">Discussion</a>
+        </nav>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here......">
+            <label for="search-bar"class="fa-solid fa-magnifying-glass"onclick="mess()" ></label>
+        </form>
+       <!-- cart -->
+       <div class="cart">
+        <h2 class="cart-title">Your Courses</h2>
+        <!-- content -->
+        <div class="cart-content">
+            <div class="cart-box">
+                
+            
+            </div>
+            
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">rs.0</div>
+            <!-- buy button -->
+            <button type="button" class="btn-buy" onclick="printbook()">Buy Now</button>
+            <!-- cart close -->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+       </div>
+    </header>
+
+    <!-- <div class="login-form-container">
+        <i class="fa-solid fa-xmark" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your Email" required>
+            <input type="password" class="box" placeholder="Enter your password" min="10" required>
+            <input type="submit" value="Login Now" onclick="message()" class="btn">
+            <input type="checkbox" id="remember" required>
+            <label for="remember">remember me</label>
+            <p>forgot password? <a href="#">click here</a></p>
+            <p>Don't have an account? <a href="#">register now</a></p>
+        </form>
+    </div> -->
+    <!-- home -->
+    <section id="about-home">
+        <h2>
+            Enroll our Poplular Courses And skill Up /
+        </h2>
+        
+    </section>
+    
+    <section id="course-inner">
+        <div class="overview">
+            <img class="course-img" src="web.png" alt="">
+            <div class="course-head">
+                <div class="c-name">
+                    <h2>Web Development Begginer Course</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Modern Web devy. from the beggining - all the way up to wt expert level! THE must-have wt resources in 2024</p>
+                </div>
+                <span>Rs.7000</span>
+            </div>
+            <h3>Instructor</h3>
+            <div class="tutor">
+                <img src="vandan.jpeg" alt="">
+                <div class="tutor-det">
+                    <h5>Vandan Soni</h5>
+                    <p>Web Developer At Google</p>
+                </div>
+            </div>
+            <hr>
+            <!-- <h3>Course overview</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat eius et hic cumque error consequatur ut? Magni tempore eveniet maxime, modi dolorum autem molestias, labore ab earum reiciendis provident sunt minima officia assumenda iste aliquid excepturi qui consectetur asperiores! Temporibus eligendi inventore enim atque iure amet natus voluptatum possimus labore a, consectetur illo quam expedita, error nulla. Suscipit ex magni quasi veritatis. Veniam praesentium voluptates explicabo iusto magnam doloribus in voluptate, aperiam voluptatem voluptatum voluptas cum est, odit repellendus earum fuga quis. Aperiam ducimus quis aut id ut labore incidunt quod.<br><br>Esse ea beatae nisi molestiae excepturi neque tempora! Sapiente rem temporibus ab numquam, omnis exercitationem laudantium reprehenderit optio maiores, quam accusamus eligendi soluta doloremque et quidem! Sunt corrupti sit animi! Placeat natus illo adipisci necessitatibus. Aperiam illo rem, quo obcaecati nisi repudiandae accusantium voluptatem distinctio omnis fugiat exercitationem molestias? Excepturi adipisci quisquam voluptatem aspernatur incidunt dolore optio enim quod harum inventore, facere iste quo laudantium mollitia sequi suscipit quasi fuga quis. Sint praesentium fuga voluptatem nostrum dolorem debitis repellat ullam? Dolor qui ab tempora molestiae laudantium ratione cum nihil officia, consequuntur libero corrupti architecto, ipsum quibusdam. Corporis non natus, <br><br>velit illo alias neque veritatis. Earum fuga rerum exercitationem aut! Vel placeat corrupti debitis rerum consequatur aperiam hic sunt nihil distinctio eligendi modi earum ex, veniam sed fugit necessitatibus ducimus quasi omnis ipsam ab possimus! Corporis nemo exercitationem quod quaerat aspernatur nisi illo voluptatibus ullam dolore magni expedita impedit, delectus iure quam in amet eligendi reprehenderit perspiciatis sed blanditiis cupiditate! Omnis eveniet odit tempore a, eius illum blanditiis amet rerum voluptatum dolores distinctio nam minima tenetur temporibus? Tenetur vel amet itaque animi quos assumenda reiciendis nulla laboriosam suscipit quibusdam illo eos neque dolorem quo commodi, iste dolorum cum minus tempora eius incidunt ex! Ipsum illo eveniet corporis quas laborum.</p>
+            <hr> -->
+            <h3>What you'll learn</h3>
+            <div class="learn">
+                <p><i class="fa-solid fa-circle-check"></i>Web development from scratch - beginner to advanced</p>
+                <p><i class="fa-solid fa-circle-check"></i>Everything you need to become a wt expert and apply for JavaScript jobs</p>
+                <p><i class="fa-solid fa-circle-check"></i>All about container,div and other func.</p>
+                <p><i class="fa-solid fa-circle-check"></i>All core features and concepts you need to know in modern web development</p>
+                <p><i class="fa-solid fa-circle-check"></i>Project-driven learning with plenty of examples</p>
+                
+            </div>
+        </div>
+        <div class="enroll">
+            <h3>This course includes:</h3>
+            <p><i class="fa-solid fa-video"></i>52 hours video</p>
+            <p><i class="fa-solid fa-newspaper"></i>75 articles</p>
+            <p><i class="fa-solid fa-download"></i>Downloadable resources</p>
+            <p><i class="fa-solid fa-infinity"></i>Lifetime access</p>
+            <p><i class="fa-solid fa-mobile"></i>Access on mobile and tv</p>
+            <p><i class="fa-solid fa-paperclip"></i>Assignments</p>
+            <p><i class="fa-solid fa-certificate"></i>Certificate of Completion</p>
+            <div class="enroll-btn">
+                <a href="#" class="blue">Enroll Cources</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>about</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium consequatur labore ad excepturi? Laboriosam autem nisi dolores! Nulla, unde?</p>
+                </div>
+                <div class="box">
+                    <h3>branche location</h3>
+                    <a href="#">Web Devt<i class="fa-solid fa-chalkboard"></i></a>
+                    <a href="#">DSA <i class="fa-solid fa-chalkboard"></i></a>
+                    <a href="#">AI<i class="fa-solid fa-chalkboard"></i></a>
+                    <a href="#">ML <i class="fa-solid fa-chalkboard"></i></a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home">home</a>
+                    <a href="#Courses">book</a>
+                    <a href="#Payment Status">package</a>
+                    <a href="#My Profile">services</a>
+                    <a href="#Feedback">gallary</a>
+                    <a href="#contact">contact</a>
+                    
+                    
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkdin</a>
+                    
+                    
+                </div>
+            </div>
+            <h1 class="credit">created by <span>prayosha tours and travels</span>  | &copy; all rights reserveds</h1>
+        </section>
+    <script src="a.js"></script>
+</body>
+</html>

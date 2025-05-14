@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <link rel="stylesheet" href="quizstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">Quiz.</a>
+            <nav class="navbar">
+                <a href="index.html">Logout</a>
+                <a href="index2.html" class="active">Quiz Pages</a>
+            </nav>
+        </header>
+        <div class="container-2">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Coding Quiz</h1>
+                    <div class="quiz-header">
+                        <span>Quiz Questions</span>
+                        <span class="timing">:12s</span>
+                        <span class="header-score">Score : 0/5</span>
+                    </div>
+                    <h2 class="question-text">What does HTML stand for?</h2>
+                    <div class="option-list">
+                        <!-- Options will be added dynamically -->
+                    </div>
+                    <div class="quiz-footer">
+                        <span class="total">1 of 5 Questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <h2>Quiz Result!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <span class="score-text">Your Score 0 out of 5</span>
+                        <span class="pf">Pass</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="tryagain-btn">Try Again</button>
+                        <button class="gohome-btn">Go To Home</button>
+                        <!-- Download Certificate Button (Initially Hidden) -->
+                        <button class="download-certificate-btn hidden">Download Certificate</button>
+
+                    </div>
+                </div>
+            </section>
+            <section class="home">
+                <div class="home-content">
+                    <h1>Quiz Website</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eveniet voluptatem, dolores enim maxime quasi culpa, minima eius ipsum delectus at odit voluptates. Aspernatur!</p>
+                    <button class="start-btn">Start Quizes</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        <span class="info">1. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+        <span class="info">2. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+        <span class="info">3. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+        <span class="info">4. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+        <span class="info">5. Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn con-btn">Continue</a>
+        </div>
+    </div>
+    <script src="quizquestion.js"></script>
+    <script src="quizscript.js"></script>
+</body>
+</html>

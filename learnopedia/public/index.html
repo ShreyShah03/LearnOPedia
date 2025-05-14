@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn'OPedia</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-bars" id="menu-bar"></i>
+        <a href="#" class="logo"><span>Learn'</span>opedia</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="blog.html">Categories</a>
+            <a href="#book">Courses</a>
+            <a href="#package">Payment Status</a>
+            <a href="profile.html">My Profile</a>
+            <a href="#review">Feedback</a>
+            <a href="#contact">Contact</a>
+            <a href="#discussion">Discussion</a>
+        </nav>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        </div>
+        <div>
+            <button id="header-login-btn" onclick="showLoginForm()">Login</button>
+      <button id="header-logout-btn" style="display: none;" onclick="logout()">Logout</button>
+      <span id="welcome-message" style="display: none;"></span>
+          </div>
+    </header>
+    <div id="categories" style="display: none;">
+        <h2>Categories</h2>
+        <!-- Category content goes here -->
+      </div>
+    
+      <div id="forms-container">
+        <!-- Login Form -->
+        <form id="login-form">
+          <h3>Login</h3>
+          <input type="email" id="login-email" placeholder="Enter your email" required>
+          <input type="password" id="login-password" placeholder="Enter your password" required>
+          <input type="submit" value="Login" class="btn">
+          <p><a href="#" id="open-register">Don't have an account? Register</a></p>
+          <p><a href="#" id="open-forgot-password">Forgot Password?</a></p>
+        </form>
+    
+        <!-- Register Form -->
+        <form id="register-form" style="display: none;">
+          <h3>Register</h3>
+          <input type="text" id="register-name" placeholder="Enter your name" required>
+          <input type="email" id="register-email" placeholder="Enter your email" required>
+          <input type="password" id="register-password" placeholder="Enter your password" required>
+          <input type="submit" value="Register" class="btn">
+          <p><a href="#" id="open-login">Already have an account? Login</a></p>
+        </form>
+    
+        <!-- Forgot Password Form -->
+        <form id="forgot-password-form" style="display: none;">
+          <h3>Forgot Password</h3>
+          <input type="email" id="forgot-email" placeholder="Enter your email" required>
+          <input type="submit" value="Send Reset Link" class="btn">
+          <p><a href="#" id="open-login-forgot">Back to Login</a></p>
+        </form>
+      </div>
+    
+    
+      
+    
+    
+    
+
+
+    <!-- homesectionstart -->
+    <section class="home" id="home">
+        <div class="content">
+        <h3>Welcome to Learn'Opedia</h3>
+        <p>Learn and Implement</p>
+        <a href="#package" class="btn">Get Started</a>
+    </div>
+    <div class="controls">
+        <span class="vid-btn" data-src="video.mp4"></span>
+    </div>
+    <div class="video-container">
+       <video src="video.mp4" loop autoplay muted></video>
+    </div>
+    </section>
+<section class="package" id="package">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span>s</span>
+            <span>e</span>
+            <span>s</span>
+            
+            
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="course-index.html">
+                <img src="web.png" alt="" class="product-img"></a>
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>Web Devt</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price"> rs.7000.00 <span>rs.8500.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn "></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="course-index.html">
+                <img src="python.png" alt="" class="product-img"></a>
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>Python</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price"> rs.2500.00 <span>rs.4000.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+            <div class="box">
+                <a href="course-index.html">
+                <img src="java.png" alt="" class="product-img"></a>
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>Java</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        
+                    </div>
+                    <div class="price"> rs.4500.00 <span>rs.5000.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="c++.png" alt="" class="product-img">
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>C++</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price"> rs.1000.00</div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+            <div class="box"><a href="course-index.html">
+                <img src="dsa.png" alt="" class="product-img"></a>
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>DSA</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        
+                    </div>
+                    <div class="price"> rs.3500.00 <span>rs.5000.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="ai.png" alt="" class="product-img">
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>AI</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price"> rs.5500.00 <span>rs.6000.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="ml.png" alt="" class="product-img">
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>ML</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"> rs.2799.00 <span>rs.3500.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="dl.png" alt="" class="product-img">
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>DL</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"> rs.3400.00 <span>rs.4000.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="c.png" alt="" class="product-img">
+                <div class="content">
+                    <h3 class="product-title"><i class="fa-solid fa-chalkboard"></i>C</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deserunt.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"> rs.1500.00 <span>rs.1700.00</span></div>
+                    <i class="fa-solid fa-cart-plus btn"></i>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- profile -->
+    
+    
+    <!-- servicessectionstarts -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+            
+        </h1>
+        <div class="box-container">
+            <div class="box">
+            <i class="fas fa-book-open"></i>
+                <h3>25+ Courses</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat odit eveniet libero. Error praesentium doloribus autem, aliquam dolor quod amet blanditiis tempora magni culpa quam dicta, ratione dignissimos fugiat sapiente?</p>
+            </div>
+            <div class="box">
+            <i class="fas fa-users"></i>
+                <h3>Expert Instructor</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat odit eveniet libero. Error praesentium doloribus autem, aliquam dolor quod amet blanditiis tempora magni culpa quam dicta, ratione dignissimos fugiat sapiente?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-keyboard"></i>
+                <h3>Life time Access</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat odit eveniet libero. Error praesentium doloribus autem, aliquam dolor quod amet blanditiis tempora magni culpa quam dicta, ratione dignissimos fugiat sapiente?</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-earth-asia"></i>
+                <h3>around the world</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat odit eveniet libero. Error praesentium doloribus autem, aliquam dolor quod amet blanditiis tempora magni culpa quam dicta, ratione dignissimos fugiat sapiente?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-ruppe-sign">&#8377 </i>
+                <h3>Money Back Guarantee*</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat odit eveniet libero. Error praesentium doloribus autem, aliquam dolor quod amet blanditiis tempora magni culpa quam dicta, ratione dignissimos fugiat sapiente?</p>
+            </div>
+            <!-- <div class="box">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3>adventures</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat odit eveniet libero. Error praesentium doloribus autem, aliquam dolor quod amet blanditiis tempora magni culpa quam dicta, ratione dignissimos fugiat sapiente?</p>
+            </div> -->
+        </div>
+    </section>
+    
+    <section class="review" id="review">
+        
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+                
+                
+                
+            </h1>
+           
+                
+                <div class="review_box">
+                    
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="p1.png" alt="">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">John</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem hic optio perferendis impedit! Porro sunt, at quae in reprehenderit cupiditate quisquam aliquam maxime, labore natus animi, culpa optio nulla aperiam est excepturi aliquid eveniet?</p>
+                        </div>
+                    </div>
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="p3.png" alt="">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">Xyz</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem hic optio perferendis impedit! Porro sunt, at quae in reprehenderit cupiditate quisquam aliquam maxime, labore natus animi, culpa optio nulla aperiam est excepturi aliquid eveniet?</p>
+                        </div>
+                    </div>
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="p2.png" alt="">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">John</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem hic optio perferendis impedit! Porro sunt, at quae in reprehenderit cupiditate quisquam aliquam maxime, labore natus animi, culpa optio nulla aperiam est excepturi aliquid eveniet?</p>
+                        </div>
+                    </div>
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="p4.png" alt="">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">xyz</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem hic optio perferendis impedit! Porro sunt, at quae in reprehenderit cupiditate quisquam aliquam maxime, labore natus animi, culpa optio nulla aperiam est excepturi aliquid eveniet?</p>
+                        </div>
+                    </div>
+    
+    
+                
+              </div>
+              <!-- contsctsectionstartds -->
+              <section class="contact" id="contact">
+                <h1 class="heading">
+                    <span>c</span>
+                    <span>o</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>a</span>
+                    <span>c</span>
+                    <span>t</span>
+                    
+                    
+                </h1>
+                <div class="row">
+                    <div class="image">
+                        <img src="contact.png" alt="">
+                    </div>
+                    <form action="">
+                        <div class="inputbox">
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" placeholder="number" min="0" required >
+                            <input type="text" placeholder="subject" required>
+                        </div>
+                        <textarea placeholder="messege" name="" id="" cols="30" rows="10" ></textarea>
+                        <input type="submit" class="btn" value="send messege" onclick="printMessage()">
+                    </form>
+                </div>
+              </section>
+              <!-- ourteamsectionstart -->
+              <section class="our team">
+                <h1 class="heading">
+                    <span>o</span>
+                    <span>u</span>
+                    <span>r</span>
+                    <span class="space"></span>
+                    <span>t</span>
+                    <span>e</span>
+                    <span>a</span>
+                    <span>m</span>
+                </h1>
+                  
+                <div class="team">
+                      
+                    <div class="team_box">
+                          <div class="profile">
+                              <img src="p7.png" alt="">
+                              <div class="info">
+                                  <h2 class="name">xyx</h2>
+                                  <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                  <div class="team_icon">
+                                      <i class="fa-brands fa-facebook"></i>
+                                      <i class="fa-brands fa-instagram"></i>
+                                      <i class="fa-brands fa-twitter"></i>
+                                      <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                 </div>
+                        
+                           </div>
+                    <div class="profile">
+                        <img src="p6.png" alt="">
+                        <div class="info">
+                            <h2 class="name">xyz</h2>
+                            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <div class="team_icon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="profile">
+                        <img src="p5.png" alt="">
+                        <div class="info">
+                            <h2 class="name">abc</h2>
+                            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <div class="team_icon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        <!-- footersectionstarts -->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>about</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium consequatur labore ad excepturi? Laboriosam autem nisi dolores! Nulla, unde?</p>
+                </div>
+                <div class="box">
+                    <h3>Our Popular Courses</h3>
+                    <a href="#">Web Devt<i class="fa-solid fa-chalkboard"></i></a>
+                    <a href="#">DSA <i class="fa-solid fa-chalkboard"></i></a>
+                    <a href="#">AI<i class="fa-solid fa-chalkboard"></i></a>
+                    <a href="#">ML <i class="fa-solid fa-chalkboard"></i></a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home">home</a>
+                    <a href="#Courses">book</a>
+                    <a href="#Payment Status">package</a>
+                    <a href="#My Profile">services</a>
+                    <a href="#Feedback">gallary</a>
+                    <a href="#contact">contact</a>
+                    
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkdin</a>
+                    
+                    
+                </div>
+            </div>
+            <h1 class="credit">created by <span>prayosha tours and travels</span>  | &copy; all rights reserveds</h1>
+        </section>
+            <script src="a.js"></script>
+            <script src="script.js"></script>
+            <script src="login.js"></script>
+
+</body>
+</html>

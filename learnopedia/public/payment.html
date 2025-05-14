@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css"> <!-- Link to your CSS styles -->
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Page</h1>
+        <form id="payment-form">
+            <div class="input-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="input-group">
+                <label for="cardExpiry">Expiry Date (MM/YY)</label>
+                <input type="text" id="cardExpiry" placeholder="MM/YY" required>
+            </div>
+            <div class="input-group">
+                <label for="cardCvc">CVC</label>
+                <input type="text" id="cardCvc" placeholder="123" required>
+            </div>
+            <button type="submit" class="pay-button">Pay</button>
+        </form>
+        <div id="payment-message" class="payment-message"></div>
+    </div>
+
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const cardNumber = document.getElementById('cardNumber').value;
+            const cardExpiry = document.getElementById('cardExpiry').value;
+            const cardCvc = document.getElementById('cardCvc').value;
+
+            const response = await fetch('/api/pay', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ cardNumber, cardExpiry, cardCvc })
+            });
+
+            const data = await response.json();
+            document.getElementById('payment-message').textContent = data.message;
+        });
+    </script>
+</body>
+</html>
